@@ -1,4 +1,4 @@
-# BauScope 3D — Frontend Patterns
+# BauScope 3D: Frontend Patterns
 
 A reference for building a Next.js 15 B2B landing page with Framer
 Motion animations, Microsoft Graph email integration, and proper
@@ -21,13 +21,13 @@ snippets below are extracted from it, sanitized and generalized.
 
 A B2B landing page is more than a static site. Done well, it's:
 
-- **Animated** — Framer Motion + IntersectionObserver patterns to
+- **Animated**: Framer Motion + IntersectionObserver patterns to
   make the page feel alive without being noisy.
-- **Performant** — Next.js 15 App Router with proper metadata,
+- **Performant**: Next.js 15 App Router with proper metadata,
   sitemap, robots, structured data.
-- **Functional** — a real contact form that actually delivers email
+- **Functional**: a real contact form that actually delivers email
   via Microsoft Graph + Azure AD, not a mailto link.
-- **Polished** — typography, scroll-snap sections, focus states
+- **Polished**: typography, scroll-snap sections, focus states
   built carefully.
 
 The patterns extracted here are the reusable parts that any modern
@@ -72,16 +72,16 @@ B2B landing page benefits from.
 
 To be honest about scope:
 
-- **The full Next.js application** — the actual page composition,
+- **The full Next.js application**: the actual page composition,
   hero copy, services list, pricing tiers, gallery, and process
   illustration are not published. This repo documents the patterns
   that make those sections work, not the sections themselves.
-- **Real contact data** — email addresses, phone numbers, and
+- **Real contact data**: email addresses, phone numbers, and
   addresses in the snippets are placeholders. The real ones lived in
   `.env.local`.
-- **Brand assets** — logos, custom imagery, and team photos used in
+- **Brand assets**: logos, custom imagery, and team photos used in
   the prototype are not included.
-- **Vendor folders** — `node_modules/` is excluded; install via
+- **Vendor folders**: `node_modules/` is excluded; install via
   `npm install` if reusing snippets in your own project.
 
 ---
@@ -95,11 +95,11 @@ study at
 
 Companion repositories on the same profile cover related work:
 
-- [`Valentino-n8n/DISPO`](https://github.com/Valentino-n8n/DISPO) —
+- [`Valentino-Veljanovski/DISPO`](https://github.com/Valentino-Veljanovski/DISPO):
   Microsoft 365 + DocuSign + AI-assisted operations
-- [`Valentino-n8n/Reklamation`](https://github.com/Valentino-n8n/Reklamation) —
+- [`Valentino-Veljanovski/Reklamation`](https://github.com/Valentino-Veljanovski/Reklamation):
   Slack-based case management
-- [`Valentino-n8n/BauScope-Control-Center`](https://github.com/Valentino-n8n/BauScope-Control-Center) —
+- [`Valentino-Veljanovski/BauScope-Control-Center`](https://github.com/Valentino-Veljanovski/BauScope-Control-Center):
   Role-based Slack platform with DocuSign HMAC
 
 ---
@@ -116,13 +116,13 @@ The code in this repository:
 - **Does not contain** proprietary business logic, customer data,
   credentials, internal identifiers, environment-specific
   configuration, or workflow exports.
-- Demonstrates **generic engineering patterns** — such as REST integrations,
+- Demonstrates **generic engineering patterns**: such as REST integrations,
   webhook signature verification, OAuth credential flows, document
-  lifecycle handling, and message-queue style design — which are
+  lifecycle handling, and message-queue style design, which are
   commonly applied across the industry and freely documented in
   vendor SDKs, RFC specifications, and other public technical material.
 
-Specifically, this material is **author-original** — the patterns shown
+Specifically, this material is **author-original**: the patterns shown
 here were written from scratch as illustrative examples to accompany the
 author's portfolio case studies and design documentation. Any visual
 similarity to internal systems at any specific employer is incidental;
